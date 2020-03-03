@@ -6,21 +6,40 @@
 #include "writeTree.h"
 #include "buildTree.h"
 
+void test_1(Node *head){
+	growTree(head);
+}
+void test_2(Node *head){
+	growTree(head);
+	growTree(head->child[0]);
+	growTree(head->child[2]);
+}
+
 int main( int argc, char **argv ) {
 
-  Node *head;
-
-  // make the head node
-  head = makeNode( 0.0,0.0, 0 );
-
-  // make a tree
-  makeChildren( head );
-  for(int i=0;i<4;i++){
-    makeChildren( head->child[i] );
-  }
-  
-
-  // print the tree for Gnuplot
+	Node *head;
+	
+	// make the head node
+	head = makeNode( 0.0,0.0, 0 );
+	
+	// make a tree
+	makeChildren( head );
+	int mark;
+  	printf("please enter 1 or 2 to run different test\n");
+	scanf("%d",&mark);
+	if (mark==1){
+		test_1(head);
+	}
+		
+	else if(mark==2){
+		test_2(head);
+	}
+		
+	else{
+		printf("wrong input\n");
+	}
+		 
+	// print the tree for Gnuplot
 	writeTree( head );
 
   return 0;

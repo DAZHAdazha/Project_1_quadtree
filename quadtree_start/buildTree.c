@@ -39,3 +39,15 @@ void makeChildren( Node *parent ) {
 
   return;
 }
+
+void growTree(Node *root){
+	if (root->child[0] == NULL)
+		makeChildren(root);	
+	else{
+		for(int i=0;i<4;i++){
+			growTree(root->child[i]);
+		}
+	}
+		
+	return;
+}
