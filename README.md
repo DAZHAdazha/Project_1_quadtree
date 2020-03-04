@@ -6,8 +6,8 @@ In these files, the implementation of function named destory_tree() is completed
 
 before running the function:
 
-![before running the function destory_Tree()](C:\Users\75834\Desktop\Project_1_quadtree\test_2.png)
+![before running the function destory_Tree()](./test_2.png)
 
 after running the function:
 
-![after running the function destroy_Tree()](C:\Users\75834\Desktop\Project_1_quadtree\destroy_tree.png)
+![after running the function destroy_Tree()](./destroy_tree.png)
