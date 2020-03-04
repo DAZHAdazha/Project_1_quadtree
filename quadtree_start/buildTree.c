@@ -2,6 +2,7 @@
 #include "stdlib.h"
 #include "math.h"
 #include "buildTree.h"
+
 // make a node at given location (x,y) and level
 
 Node *makeNode( double x, double y, int level ) {
@@ -40,12 +41,12 @@ void makeChildren( Node *parent ) {
   return;
 }
 
-void growTree(Node *root){
+void grow_Tree(Node *root){
 	if (root->child[0] == NULL)
 		makeChildren(root);	
 	else{
 		for(int i=0;i<4;i++){
-			growTree(root->child[i]);
+			grow_Tree(root->child[i]);
 		}
 	}
 		

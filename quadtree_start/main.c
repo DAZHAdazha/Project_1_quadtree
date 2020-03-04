@@ -3,16 +3,18 @@
 #include "stdlib.h"
 #include "math.h"
 #include "treeStructure.h"
+#include "destroyTree.h"
 #include "writeTree.h"
 #include "buildTree.h"
 
+
 void test_1(Node *head){
-	growTree(head);
+	grow_Tree(head);
 }
 void test_2(Node *head){
-	growTree(head);
-	growTree(head->child[0]);
-	growTree(head->child[2]);
+	grow_Tree(head);
+	grow_Tree(head->child[0]);
+	grow_Tree(head->child[2]);
 }
 
 int main( int argc, char **argv ) {
@@ -30,15 +32,15 @@ int main( int argc, char **argv ) {
 	if (mark==1){
 		test_1(head);
 	}
-		
 	else if(mark==2){
 		test_2(head);
 	}
 		
 	else{
 		printf("wrong input\n");
-	}
-		 
+	} 
+	destroy_Tree(head);
+	
 	// print the tree for Gnuplot
 	writeTree( head );
 
