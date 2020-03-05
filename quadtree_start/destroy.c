@@ -4,16 +4,22 @@
 #include "destroy.h"
 
 // a function that could recursively free all the tree nodes
-void destroy_Tree(Node *root){
+void destroyTree(Node *root){
 	for(int i=0;i<4;i++){
 		if (root->child[i])
-			destroy_Tree(root->child[i]);
+			destroyTree(root->child[i]);
 	}
 	free(root);
 	root = NULL; 
 	return;
 }
-void destroy_Node(Node *root){
-	
+// assuming all children are lead nodes
+void removeChildren(Node *parent){
+	for(int i=0;i<4;i++){
+		if(parent->child[i]!=NULL){
+			free(parent->child[i]);
+			parent->child[i] = NULL;
+		}
+	}
 	return;
 }

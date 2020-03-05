@@ -3,7 +3,7 @@
 #include "stdlib.h"
 #include "math.h"
 #include "treeStructure.h"
-#include "destroyTree.h"
+#include "destroy.h"
 #include "writeTree.h"
 #include "buildTree.h"
 
@@ -35,14 +35,13 @@ int main( int argc, char **argv ) {
 	else if(mark==2){
 		test_2(head);
 	}
-		
+	
 	else{
 		printf("wrong input\n");
 	} 
-	destroy_Tree(head);
-	
+	removeChildren(head->child[1]);
 	// print the tree for Gnuplot
-	writeTree( head );
-
+	writeTree( head );	
+		
   return 0;
 }

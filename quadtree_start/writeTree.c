@@ -10,7 +10,7 @@
 void writeNode( FILE *fp, Node *node ) {
 
     int i;
-	if(!node){
+	if(node!=NULL){
 		if( node->child[0] == NULL )
 	      printOut( fp, node );
 	    else {
