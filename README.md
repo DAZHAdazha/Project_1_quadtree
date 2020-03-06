@@ -1,3 +1,23 @@
+version_6 of the Project_1_quadtree
+
+In this version, 4 pictures were uploaded to the files. The four pictures were taken as the screenshots of testing while using valgrind in Ubuntu system, in order to find out where there is any memory leak from the C programme. All the four screenshots were under the directory "valgrin_pic".
+
+Testing destroyTree() during test_1:
+
+![](./valgrin_pic/destroyTree_test_1.png)
+
+Testing destroyTree() during test_2:
+
+![](./valgrin_pic/destroyTree_test_2.png)
+
+Testing removeChildren() during test_1:
+
+![](./valgrin_pic/removeChildren_test_1.png)
+
+Testing removeChildren() during test_2:
+
+![](./valgrin_pic/removeChildren_test_2.png)
+
 version_5 of the Project_1_quadtree
 
 In this version,  one function named removeChildren was created to finish this task, which take one argument "Node * paren*" as parameter. The function was capable to remove all the children from one parent node, with assuming that all children are leaf nodes according to the reqirement(in another word, no recursion was used in the function.) The working pattern was simple, just used free() function to all four children nodes of the gigin parent node if they existed. 
