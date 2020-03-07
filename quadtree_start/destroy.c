@@ -5,9 +5,10 @@
 
 // a function that could recursively free all the tree nodes
 void destroyTree(Node *root){
-	for(int i=0;i<4;i++){
-		if (root->child[i])
-			destroyTree(root->child[i]);
+	if(root!=NULL){
+		for(int i=0;i<4;i++){
+			destroyTree(root->child[i]);			
+		}
 	}
 	free(root);
 	root = NULL; 
@@ -15,11 +16,9 @@ void destroyTree(Node *root){
 }
 // assuming all children are lead nodes
 void removeChildren(Node *parent){
-	for(int i=0;i<4;i++){
-		if(parent->child[i]!=NULL){
-			free(parent->child[i]);
-			parent->child[i] = NULL;
-		}
+	for(int j=0;j<4;j++){
+		free(parent->child[j]);	
+		parent->child[j] = NULL;
 	}
 	return;
 }

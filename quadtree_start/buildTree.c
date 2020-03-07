@@ -41,12 +41,12 @@ void makeChildren( Node *parent ) {
   return;
 }
 
-void grow_Tree(Node *root){
+void growTree(Node *root){
 	if (root->child[0] == NULL)
 		makeChildren(root);	
 	else{
 		for(int i=0;i<4;i++){
-			grow_Tree(root->child[i]);
+			growTree(root->child[i]);
 		}
 	}
 		
