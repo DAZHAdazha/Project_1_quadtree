@@ -12,10 +12,9 @@ Node *makeNode( double x, double y, int level ) {
   Node *node = (Node *)malloc(sizeof(Node));
 
   node->level = level;
-
   node->xy[0] = x;
   node->xy[1] = y;
-
+  node->flag = 0;
   for( i=0;i<4;++i )
     node->child[i] = NULL;
 

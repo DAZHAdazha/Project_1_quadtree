@@ -1,8 +1,16 @@
+version_7 of the Projecy_1_quadtree
+
+In this version, task 3 was accomplished. Two files were added into the code named "nodeValue.c" and "nodeValue.h",  and two additonal functions were integrated to the original version called "stage_1" and "stage_2". These two functions were able to generate a quadtree automatically based on a given funciton F(x,y) in 2D space. The results in gnuplot was showed as below:
+
+![](./task3.png)
+
 version_6 of the Project_1_quadtree
 
 In this version, 4 pictures were uploaded to the files. The four pictures were taken as the screenshots of testing while using valgrind in Ubuntu system, in order to find out where there is any memory leak from the C programme. All the four screenshots were under the directory "valgrin_pic".
 
 Testing destroyTree() during test_1:
+
+
 
 ![](./valgrin_pic/destroyTree_test_1.png)
 
