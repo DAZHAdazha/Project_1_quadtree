@@ -8,13 +8,13 @@ In this version,  task 3 extended was finished. One addtional function was merge
 
 The demostration pictures of setting the maxLevel=6 shows below: 
 
-![](./task_3_extend.jpg)
+![](./pic/task_3_extend.jpg)
 
 version_7 of the Project_1_quadtree
 
 In this version, task 3 was accomplished. Two files were added into the code named "nodeValue.c" and "nodeValue.h",  and two additonal functions were integrated to the original version called "stage_1" and "stage_2". These two functions were able to generate a quadtree automatically based on a given funciton F(x,y) in 2D space. The results in gnuplot was showed as below:
 
-![](./task3.png)
+![](./pic/task3.png)
 
 version_6 of the Project_1_quadtree
 
@@ -42,11 +42,11 @@ In this version,  one function named removeChildren was created to finish this t
 
 before running the function:
 
-![](./test_2.png)
+![](./pic/test_2.png)
 
 after running the function:
 
-![](./removeChildren.png)
+![](./pic/removeChildren.png)
 
 version_4 of the Project_1_quadtree
 
@@ -56,8 +56,8 @@ In these files, the implementation of function named destory_tree() is completed
 
 before running the function:
 
-![before running the function destory_Tree()](./test_2.png)
+![before running the function destory_Tree()](./pic/test_2.png)
 
 after running the function:
 
-![after running the function destroy_Tree()](./removeChildren.png)
+![after running the function destroy_Tree()](./pic/removeChildren.png)
