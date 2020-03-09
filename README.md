@@ -1,4 +1,12 @@
-version_7 of the Projecy_1_quadtree
+version_8 of the Project of the Project_1_quadtree
+
+In this version,  task 3 extended was finished. One addtional function was merged into the file "nodeValue.c" named "adapt()". While this function was capable to tontiunes running the stage_1() and stage_2() in order to automatically generate/remove nodes, until the tree does not change(by taking advantages of the counts of the added and removed nodes)
+
+The demostration pictures of setting the maxLevel=6 shows below: 
+
+![](./task_3_extend.jpg)
+
+version_7 of the Project_1_quadtree
 
 In this version, task 3 was accomplished. Two files were added into the code named "nodeValue.c" and "nodeValue.h",  and two additonal functions were integrated to the original version called "stage_1" and "stage_2". These two functions were able to generate a quadtree automatically based on a given funciton F(x,y) in 2D space. The results in gnuplot was showed as below:
 
@@ -9,8 +17,6 @@ version_6 of the Project_1_quadtree
 In this version, 4 pictures were uploaded to the files. The four pictures were taken as the screenshots of testing while using valgrind in Ubuntu system, in order to find out where there is any memory leak from the C programme. All the four screenshots were under the directory "valgrin_pic".
 
 Testing destroyTree() during test_1:
-
-
 
 ![](./valgrin_pic/destroyTree_test_1.png)
 
