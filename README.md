@@ -1,4 +1,8 @@
-version_8 of the Project of the Project_1_quadtree
+version_9 of the Project_1_quadtree
+
+In this version, full comments were integrated to all code, and in "main.c", the code was  seperated by different tasks and tests. Moreover, all pictures were sorted and uploaded.
+
+version_8 of the Project_1_quadtree
 
 In this version,  task 3 extended was finished. One addtional function was merged into the file "nodeValue.c" named "adapt()". While this function was capable to tontiunes running the stage_1() and stage_2() in order to automatically generate/remove nodes, until the tree does not change(by taking advantages of the counts of the added and removed nodes)
 
