@@ -3,12 +3,8 @@
 #include "math.h"
 #include "writeTree.h"
 
-// write out the tree to file 'quad.out'
-
 // recursively visit the leaf nodes
-
 void writeNode( FILE *fp, Node *node ) {
-
     int i;
 	if(node!=NULL){
 		if( node->child[0] == NULL )
@@ -22,15 +18,11 @@ void writeNode( FILE *fp, Node *node ) {
     return;
 }
 
-
+// write out the tree to file 'quad.out'
 void writeTree( Node *head ) {
-
   FILE *fp = fopen("quad.out","w");
-
   writeNode(fp,head);
-
   fclose(fp);
-
   return;
 }
 
@@ -41,13 +33,11 @@ void printOut( FILE *fp, Node *node ) {
   double y = node->xy[1];
   int level = node->level;
   double h = pow(2.0,-level);
-
   fprintf(fp, " %g %g\n",x,y);
   fprintf(fp, " %g %g\n",x+h,y);
   fprintf(fp, " %g %g\n",x+h,y+h);
   fprintf(fp, " %g %g\n",x,y+h);
   fprintf(fp, " %g %g\n\n",x,y);
-
   return;
 }
 

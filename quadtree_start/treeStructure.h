@@ -1,5 +1,5 @@
 // tree data structure
-#ifndef mark
+#ifndef mark	// use macro to avoid repeating declaration
 #define mark 1
 struct qnode {
   int level;

@@ -10,14 +10,13 @@ Node *makeNode( double x, double y, int level ) {
 	node->level = level;
 	node->xy[0] = x;
 	node->xy[1] = y;
-	node->flag = 0;
+	node->flag = 0;	// set the default node flag to 0
 	for( i=0;i<4;++i )
 		node->child[i] = NULL;
 	return node;
 }
 
 // split a leaf nodes into 4 children
-
 void makeChildren( Node *parent ) {
 	double x = parent->xy[0];
 	double y = parent->xy[1];
@@ -30,12 +29,13 @@ void makeChildren( Node *parent ) {
 	return;
 }
 
+// make the tree one level deeper
 void growTree(Node *root){
-	if (root->child[0] == NULL)
+	if (root->child[0] == NULL) //only it is leaf node then makeChildren
 		makeChildren(root);	
 	else{
 		for(int i=0;i<4;i++){
-			growTree(root->child[i]);
+			growTree(root->child[i]);  // recursively traverse leaf nodes
 		}
 	}
 	return;

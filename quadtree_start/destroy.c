@@ -13,6 +13,7 @@ void destroyTree(Node *root){
 	root = NULL; 
 	return;
 }
+
 // assuming all children are lead nodes
 void removeChildren(Node *parent){
 	for(int i=0;i<4;i++){
